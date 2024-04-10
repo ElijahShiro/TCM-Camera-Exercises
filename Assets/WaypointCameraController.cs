@@ -24,10 +24,12 @@ public class WaypointCameraController : MonoBehaviour
 
         transform.position = transform.position + direction * speed * Time.deltaTime;   
 
-        if(transform.position == waypoints[currentWaypoint].position)
+        
+
+        if(Vector3.Distance(transform.position, waypoints[currentWaypoint].position) < 1)
         {
             currentWaypoint += 1;
         }
-        
+            
     }
 }
