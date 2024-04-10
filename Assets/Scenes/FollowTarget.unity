@@ -134,8 +134,8 @@ GameObject:
   - component: {fileID: 342818464}
   - component: {fileID: 342818463}
   - component: {fileID: 342818462}
-  - component: {fileID: 342818466}
   - component: {fileID: 342818465}
+  - component: {fileID: 342818466}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -224,14 +224,14 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 342818461}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c2a8179b1e0014922850403618f7dfb8, type: 3}
+  m_Script: {fileID: 11500000, guid: 81ccb9898a05f564f9c970508ce14238, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  followObject: {fileID: 2020759943}
-  offsetY: 2
-  offsetX: 4
+  waypoints:
+  - {fileID: 0}
+  speed: 1
 --- !u!114 &342818466
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -241,12 +241,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 342818461}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 432f01ea1e9624dd38d42e29b217e2cd, type: 3}
+  m_Script: {fileID: 11500000, guid: 1117938283641064095220d19de9633f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  followObject: {fileID: 2020759939}
-  followOffset: {x: 4, y: 0}
-  speed: 3
+  target: {fileID: 2020759943}
 --- !u!1 &475254564
 GameObject:
   m_ObjectHideFlags: 0
